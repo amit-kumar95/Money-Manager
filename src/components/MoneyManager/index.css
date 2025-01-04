@@ -4,11 +4,26 @@
   margin: 10px;
   margin-left: 80px;
   width: 90%;
-  height: 150vh;
+  height: 180vh;
   border: 1px solid #ffffff;
   box-shadow: 0px 2px 2px 2px #d7dfe9;
   padding: 50px;
   font-family: 'Roboto';
+}
+
+@media (max-width: 799px) {
+  .bg_Container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 80px;
+    width: 100%;
+    height: 150vh;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 2px 2px 2px #d7dfe9;
+    padding: 20px;
+    font-family: 'Roboto';
+  }
 }
 
 .moneyMangerContainer {
@@ -26,11 +41,37 @@
   padding-left: 70px;
 }
 
+@media (max-width: 799px) {
+  .moneyMangerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+    background-size: cover;
+    height: 17vh;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    padding-left: 10px;
+  }
+}
+
 .richardHeading {
   font-size: 29px;
   font-weight: 700;
   color: #475569;
   margin-bottom: 5px;
+}
+
+@media (max-width: 799px) {
+  .richardHeading {
+    font-size: 19px;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 5px;
+  }
 }
 
 .moneyPara {
@@ -39,12 +80,30 @@
   color: #475569;
 }
 
+@media (max-width: 799px) {
+  .moneyPara {
+    font-size: 12px;
+    font-weight: 500;
+    color: #475569;
+  }
+}
+
 .addMoneyCont {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+}
+
+@media (max-width: 799px) {
+  .addMoneyCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 
 .formContainer {
@@ -60,6 +119,21 @@
   margin-right: 65px;
 }
 
+@media (max-width: 799px) {
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px;
+    width: 100%;
+    height: 70vh;
+    border: 2px solid #d7dfe9;
+    border-radius: 10px;
+    margin-right: 65px;
+  }
+}
+
 .transaction-form {
   display: flex;
   flex-direction: column;
@@ -69,6 +143,17 @@
   width: 100%;
 }
 
+@media (max-width: 799px) {
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 424px;
+    width: 100%;
+  }
+}
+
 .transactionHeading {
   color: #334155;
   font-size: 32px;
@@ -76,11 +161,30 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 799px) {
+  .transactionHeading {
+    color: #334155;
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+  }
+}
+
 .labelStl {
   color: #7e858e;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: none;
+}
+
+@media (max-width: 799px) {
+  .labelStl {
+    color: #7e858e;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
 }
 
 .inputStl {
@@ -94,9 +198,29 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 799px) {
+  .inputStl {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #7e858e;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+
 .moneySpan {
   color: #0b69ff;
   font-weight: 700;
+}
+
+@media (max-width: 799px) {
+  .moneySpan {
+    color: #0b69ff;
+    font-weight: 700;
+  }
 }
 
 .addButton {
@@ -108,6 +232,19 @@
   border: none;
   border-radius: 9px;
   font-weight: 600;
+}
+
+@media (max-width: 799px) {
+  .addButton {
+    background-color: #0b69ff;
+    color: #ffffff;
+    height: 40px;
+    cursor: pointer;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+  }
 }
 
 .historyContainer {
@@ -122,6 +259,21 @@
   border-radius: 10px;
 }
 
+@media (max-width: 799px) {
+  .historyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px;
+    width: 100%;
+    margin-top: 40px;
+    height: 70vh;
+    border: 2px solid #d7dfe9;
+    border-radius: 10px;
+  }
+}
+
 .unOrderedHistory {
   display: flex;
   flex-direction: column;
@@ -131,6 +283,19 @@
   list-style-type: none;
   padding: 0px;
   width: 100%;
+}
+
+@media (max-width: 799px) {
+  .unOrderedHistory {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+  }
 }
 
 .listItemStl {
@@ -143,6 +308,18 @@
   width: 100%;
 }
 
+@media (max-width: 799px) {
+  .listItemStl {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid grey;
+    width: 100%;
+  }
+}
+
 .hisItemCont {
   display: flex;
   flex-direction: row;
@@ -151,4 +328,16 @@
   width: 75%;
   font-weight: 600;
   color: #1e293b;
+}
+
+@media (max-width: 799px) {
+  .hisItemCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 74%;
+    font-weight: 600;
+    color: #1e293b;
+  }
 }
